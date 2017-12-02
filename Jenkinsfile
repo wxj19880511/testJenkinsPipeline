@@ -35,6 +35,11 @@ pipeline {
         sh 'echo "MT"'
       }
     }
+    stage('Report') {
+      steps {
+        input(message: 'Are you sure to report?', ok: 'Yes')
+      }
+    }
   }
   environment {
     AZ = 'hz_bts'
