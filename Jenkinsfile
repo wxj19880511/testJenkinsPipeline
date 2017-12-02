@@ -36,4 +36,7 @@ pipeline {
       }
     }
   }
+  environment {
+    AZ = 'hz_bts'
+  }
 }
